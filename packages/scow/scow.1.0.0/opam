@@ -5,6 +5,6 @@ build: [
   [make "install"]
 ]
 remove: [
-  ["ocamlfind" "remove" "regen_event"]
+  ["ocamlfind" "remove" "scow"]
 ]
 depends: ["ocamlfind" "core" {>= "109.12.00" } "async" "gen_server"]
