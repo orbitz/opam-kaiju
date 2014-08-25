@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "mmatalka@gmail.com"
 build: [
-  [make]
+  [make "-j%{jobs}%"]
   [make "install"]
 ]
 remove: [

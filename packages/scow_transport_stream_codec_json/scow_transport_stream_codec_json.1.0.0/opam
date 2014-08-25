@@ -1,0 +1,10 @@
+opam-version: "1"
+maintainer: "mmatalka@gmail.com"
+build: [
+  [make "-j%{jobs}%"]
+  [make "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "scow_transport_stream_codec_json"]
+]
+depends: ["ocamlfind" "core" {>= "109.12.00" } "async" "scow" "scow_transport_stream" ]
